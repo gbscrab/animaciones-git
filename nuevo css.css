@@ -1,0 +1,545 @@
+/*fuente de letra*/
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Fasthand&family=Londrina+Shadow&family=Major+Mono+Display&family=Rampart+One&family=Sevillana&family=Smythe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Fasthand&family=Londrina+Shadow&family=Major+Mono+Display&family=Rampart+One&family=Satisfy&family=Sevillana&family=Smythe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+
+
+/*DEGRADE EN CONTACTOS*/
+
+.contactos { 
+
+    background-color: #f89b9e;
+    background-image: linear-gradient(315deg, #f89b9e 0%, #c9d9ff 74%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+/*menu de las 5 paginas */
+
+nav {text-align: center;
+    font-size: 30px; 
+    
+}
+a {
+    color: rgb(126, 99, 177);
+    text-decoration: none;
+    font-family:'Bebas Neue';
+    background-color: #f89b9e;
+    background-image: linear-gradient(315deg, #f89b9e 0%, #c9d9ff 74%);
+}
+span{
+    
+    margin: 30px;
+    background-image:
+    
+    padding: 10px 20px;
+    margin-top: 0px;
+   
+}
+
+h3{
+    color:rgb(182, 54, 96);
+    font-size: 35px; 
+    font-family:'Major Mono Display';
+    text-align: center;
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-image:url(https://www.arquitecturaydiseno.es/medio/2022/03/19/apertura-macrame_84504a26_1280x794.jpg);
+    background-position: 60px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+h6 {
+    color: rgb(216, 84, 128);
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+    margin-left: 100px; 
+    padding: 50px;
+
+/*promociones*/
+
+.imagenLunar{ 
+    width: 350px; 
+    height: 550px; 
+    margin-left:400px;
+    padding: 50px;
+}
+
+
+
+}
+body{ background-image: url("https://img.freepik.com/vector-gratis/fondo-invierno-hojas-pinceles-color-pastel_220290-42.jpg?w=2000");}
+
+
+/*RESPONSIVE DESIGN*/
+
+/*desktop*/
+
+@media (min-width:1024px) {
+
+    /*propiedades de los titulos*/
+
+   h1{
+    color:palevioletred;
+    font-size: 60px; 
+    font-family:'Major Mono Display';
+    margin-left: 350px; 
+    margin-top: 30px;
+    }
+   h2 {
+    color: rgb(216, 84, 128);
+    font-size: 30px;
+    font-family: 'Satisfy';
+    margin-left: 700px; 
+}
+
+.descripcion-flex {
+    display: flex;
+    justify-content: center;
+    padding:10px;    
+}
+
+
+h4{ 
+    color:rgb(182, 54, 96);
+    font-size: 35px; 
+    font-family:'Major Mono Display';
+
+}
+
+h5{color:rgb(92, 47, 112);
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+}
+
+/*propiedades de las descripciones de productos*/
+article {
+    text-align:center;
+    font-size: 30px;
+    margin: 100px;
+}
+p{
+    color: rgb(167, 71, 130);
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+
+}
+
+
+/*propiedades de las imagenes-productos*/
+
+/*TRANSFORMACION*/
+
+.imagenDos{ 
+    width: 150px; 
+    height: 250px; 
+    margin: 30px;
+    margin-left: 60px;
+    border-top: 20px solid #9985e4;
+    border-bottom: 20px solid #b26fb8;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    -webkit-background-size: 20px 100%;
+    -moz-background-size: 20px 100%;
+    background-size: 20px 100%;
+    background-image: -webkit-linear-gradient(top, #9985e4 0%, #b26fb8 100%), -webkit-linear-gradient(top, #9985e4 0%, #b26fb8 100%);
+    background-image: -moz-linear-gradient(top, #9985e4 0%, #b26fb8 100%), -moz-linear-gradient(top, #9985e4 0%, #b26fb8 100%);
+    background-image: -o-linear-gradient(top, #9985e4 0%, #b26fb8 100%), -o-linear-gradient(top, #9985e4 0%, #b26fb8 100%);
+    background-image: linear-gradient(to bottom, #9985e4 0%, #b26fb8 100%), linear-gradient(to bottom, #9985e4 0%, #b26fb8 100%);
+    transition: all 2s;  
+    transform: scale(1.0,1.0);
+}
+
+.imagenDos:hover{
+    width: 225px;
+    height: 375px;
+}
+/*ANIMACION*/
+
+.animacion {
+    animation-name: texto;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes texto {
+    from {
+        transform:translateX(1200px);
+    }
+    to {
+    transform:translate(0);
+    } 
+}
+
+/*fondo imagen*/
+
+
+div{
+    background-color: rgb(250, 244, 249);
+    margin: 15px;
+    color: rgb(216, 84, 128);
+    font-size: 30px;
+    font-family: 'Satisfy';
+}
+
+
+#
+ 
+
+
+
+
+/*grid y sus areas*/
+
+#grilla-areas {
+              display: grid;
+              grid-template-areas: 
+              
+              "cabeza cabeza cabeza"
+              "cuello cuello cuello"
+              "productos productos"
+              "productosDos productosDos";
+             
+ }
+
+header {
+       grid-area:cabeza;
+}
+footer {
+       grid-area:pie;
+}
+#productos {
+       grid-area:productos;
+}
+#productosDos {
+     grid-area: productosDos;
+} 
+nav{
+    grid-area: menus;
+}
+
+#subtitulo {
+    grid-area:cuello;
+}
+
+.menu-flex {
+    display: flex;
+    justify-content: center;   
+}
+
+
+.flex-productos{
+     display: flex;
+    justify-content: center;
+    padding: 0px;
+    flex-wrap:;
+}
+
+
+
+}
+
+
+
+/*tablet*/
+
+
+
+@media (min-width:481px) and (max-width:1023px) {
+
+
+    h1{
+        color:palevioletred;
+        font-size: 50px; 
+        font-family:'Major Mono Display';
+        margin-left: 170px; 
+        margin-top: 30px;
+        }
+    
+    h2{
+            color: rgb(216, 84, 128);
+            font-size: 25px;
+            font-family: 'Satisfy';
+            margin-left: 500px;
+            padding: 10x; 
+        }
+
+    h4{ 
+            color:rgb(182, 54, 96);
+            font-size: 25px; 
+            font-family:'Major Mono Display';
+        
+        }
+
+    h5{color:rgb(92, 47, 112);
+            font-size: 20px;
+            font-family: 'Bebas Neue';
+        }    
+    .menu-flex {
+            display: flex;
+            flex-flow: row;
+            padding: 10px;
+            
+        }
+
+    div{
+            background-color: rgb(250, 244, 249);
+            margin: 15px;
+            color: rgb(216, 84, 128);
+            font-size: 30px;
+            font-family: 'Satisfy';
+        }
+        
+
+
+
+    /*propiedades de las descripciones de productos*/
+    article {
+        text-align:center;
+        font-size: 30px;
+        margin: 100px;
+        }
+        p{
+         color: rgb(167, 71, 130);
+         font-size: 30px;
+         font-family: 'Bebas Neue';
+
+        }
+
+
+/*propiedades de las imagenes-productos*/
+
+
+/*TRANSFORMACIONES Y ANIMACION EN TABLET*/
+
+.imagenDos{ 
+    width: 150px; 
+    height: 250px; 
+    margin: 30px;
+    margin-left: 60px;
+    border-top: 20px solid #9985e4;
+    border-bottom: 20px solid #b26fb8;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    -webkit-background-size: 20px 100%;
+    -moz-background-size: 20px 100%;
+    background-size: 20px 100%;
+    background-image: -webkit-linear-gradient(top, #9985e4 0%, #b26fb8 100%), -webkit-linear-gradient(top, #9985e4 0%, #b26fb8 100%);
+    background-image: -moz-linear-gradient(top, #9985e4 0%, #b26fb8 100%), -moz-linear-gradient(top, #9985e4 0%, #b26fb8 100%);
+    background-image: -o-linear-gradient(top, #9985e4 0%, #b26fb8 100%), -o-linear-gradient(top, #9985e4 0%, #b26fb8 100%);
+    background-image: linear-gradient(to bottom, #9985e4 0%, #b26fb8 100%), linear-gradient(to bottom, #9985e4 0%, #b26fb8 100%);
+    transition: all 2s;  
+    transform: scale(1.0,1.0);
+}
+
+.imagenDos:hover{
+    width: 225px;
+    height: 375px;
+}
+/*ANIMACION*/
+
+.animacion {
+    animation-name: texto;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes texto {
+    from {
+        transform:translateX(1020px);
+    }
+    to {
+    transform:translate(0);
+    } 
+}
+
+
+
+
+     
+    #grilla-areas {
+        display: grid;
+        grid-template-areas: 
+        
+        "cabeza "
+        "cuello "
+        "productos"
+        "productosDos";
+
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+
+    
+
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/*smartphone*/
+
+@media (max-width:480px) {
+        h1{
+        color:palevioletred;
+        font-size: 40px; 
+        font-family:'Major Mono Display';
+        margin-left: 20px; 
+        margin-top: 30px;
+        }
+    
+        h2 {
+            color: rgb(216, 84, 128);
+            font-size: 25px;
+            font-family: 'Satisfy';
+            margin-left: 200px;
+            padding: 10x; 
+        }
+
+        h4{ 
+            color:rgb(182, 54, 96);
+            font-size: 25px; 
+            font-family:'Major Mono Display';
+        
+        }
+
+        h5{
+            color:rgb(92, 47, 112);
+            font-size: 15px;
+            font-family: 'Bebas Neue';
+        }
+
+        div{
+            background-color: rgb(250, 244, 249);
+            margin: 15px;
+            color: rgb(216, 84, 128);
+            font-size: 30px;
+            font-family: 'Satisfy';
+        }
+        .menu-flex {
+            display: flex;
+            flex-flow: column nowrap; 
+            padding: 10px;
+            
+        }
+        /*propiedades de las descripciones de productos*/
+        article {
+        text-align:center;
+        font-size: 30px;
+        margin: 100px;
+        }
+        p{
+         color: rgb(167, 71, 130);
+         font-size: 30px;
+         font-family: 'Bebas Neue';
+
+        }
+
+
+/*propiedades de las imagenes-productos*/
+
+.imagenDos{ width: 150px; height: 250px; margin: 20px;;}
+
+
+
+
+
+    #grilla-areas {
+        display: grid;
+        grid-template-areas: 
+        
+        "cabeza"
+        "cuello "
+        "productos"
+        "productosDos ";
+
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+     }
+
+    /*TRANSFORMACIONES Y ANIMACION EN SMATRPHONE*/
+
+    .imagenDos{ 
+    width: 150px; 
+    height: 250px; 
+    margin: 30px;
+    margin-left: 60px;
+    border-top: 20px solid #9985e4;
+    border-bottom: 20px solid #b26fb8;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat;
+    -webkit-background-size: 20px 100%;
+    -moz-background-size: 20px 100%;
+    background-size: 20px 100%;
+    background-image: -webkit-linear-gradient(top, #9985e4 0%, #b26fb8 100%), -webkit-linear-gradient(top, #9985e4 0%, #b26fb8 100%);
+    background-image: -moz-linear-gradient(top, #9985e4 0%, #b26fb8 100%), -moz-linear-gradient(top, #9985e4 0%, #b26fb8 100%);
+    background-image: -o-linear-gradient(top, #9985e4 0%, #b26fb8 100%), -o-linear-gradient(top, #9985e4 0%, #b26fb8 100%);
+    background-image: linear-gradient(to bottom, #9985e4 0%, #b26fb8 100%), linear-gradient(to bottom, #9985e4 0%, #b26fb8 100%);
+    transition: all 2s;  
+    transform: scale(1.0,1.0);
+    }
+
+    .imagenDos:hover{
+    width: 225px;
+    height: 375px;
+    }
+     /*ANIMACION*/
+
+    .animacion {
+    animation-name: texto;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+     }
+
+
+    @keyframes texto {
+    from {
+        transform:translateX(480px);
+    }
+    to {
+    transform:translate(0);
+    } 
+    }
+
+
+
+}
